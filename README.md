@@ -5,7 +5,7 @@ A collection of Claude Code skills for planning, productivity, and vibe-coded de
 ## Installation
 
 ```bash
-npx skills add huntsyea/vibe-skills
+npx skills add rohanpatriot/vibe-skills
 ```
 
 ## Available Skills
