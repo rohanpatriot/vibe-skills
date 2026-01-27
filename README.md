@@ -1,46 +1,45 @@
 # Vibe Skills
 
-Skills for vibecoding. Ship great stuff without being a developer.
+You don't need to be a developer. You need to ship.
 
-Vibecoding is about describing what you want and letting AI handle the technical details. These skills help Claude Code stay organized, remember context across sessions, and keep complex projects on track—so you can focus on the vision while Claude handles the execution.
+I'm not here to teach you to code. I'm here to make sure you don't have to. Vibecoding is simple: you say what you want, Claude builds it. But Claude has a memory problem. Context slips. Mistakes repeat. Projects go sideways.
 
-## Installation
+These skills fix that.
+
+## Get In
 
 ```bash
 npx skills add rohanpatriot/vibe-skills
 ```
 
-## Available Skills
+## What You Get
 
 ### planning-setup
 
-Stay organized on bigger projects. This skill sets up a simple planning system that helps Claude remember what you're building, what's been tried, and what's next.
-
-**Use when:** Your project is getting complex—multiple features, lots of back-and-forth, or work that spans several sessions.
+When the project gets real—multiple moving pieces, sessions that span days, complexity that would make most people tap out—you need structure. This gives Claude a system. Goals. Phases. A record of what worked and what didn't.
 
 ```bash
 /planning-setup
 ```
 
-**What it creates:**
-- `task_plan.md` - Your goal, current phase, decisions made
-- `findings.md` - What Claude discovers along the way
-- `progress.md` - Session-by-session log of what happened
-- Enforcement rules so Claude actually uses these files
+Creates:
+- `task_plan.md` — The goal. The phase. The decisions.
+- `findings.md` — Everything Claude learns along the way.
+- `progress.md` — Session by session. What happened. What's next.
+- Rules that force Claude to actually use these files.
 
-No more "wait, what were we doing?" moments.
+No more starting from zero every session. No more repeating the same dead ends.
 
-## Why This Exists
+## Why I Built This
 
-When you're vibecoding a complex project, context gets lost. Claude forgets what was tried, repeats mistakes, or loses track of the bigger picture.
+Most people quit when projects get complicated. Not because they lack vision—because their tools lose the thread.
 
-These skills give Claude the structure to:
-- Remember across sessions
-- Learn from errors
-- Stay focused on your actual goal
+Claude is good. But Claude forgets. These skills give it a system so it doesn't.
 
-You describe what you want. Claude figures out how. These skills help Claude do that better.
+You focus on the outcome. Claude handles the execution. This makes sure nothing falls through the cracks.
+
+That's the edge.
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details.
+MIT — Do what you want with it.
