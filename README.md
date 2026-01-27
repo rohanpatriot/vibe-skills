@@ -1,6 +1,8 @@
 # Vibe Skills
 
-A collection of Claude Code skills for planning, productivity, and vibe-coded development.
+Skills for vibecoding. Ship great stuff without being a developer.
+
+Vibecoding is about describing what you want and letting AI handle the technical details. These skills help Claude Code stay organized, remember context across sessions, and keep complex projects on track—so you can focus on the vision while Claude handles the execution.
 
 ## Installation
 
@@ -12,33 +14,32 @@ npx skills add rohanpatriot/vibe-skills
 
 ### planning-setup
 
-Sets up planning-with-files infrastructure for complex projects. Creates task_plan.md, findings.md, progress.md, updates CLAUDE.md with methodology guidance, and adds .claude/rules enforcement.
+Stay organized on bigger projects. This skill sets up a simple planning system that helps Claude remember what you're building, what's been tried, and what's next.
 
-**Use when:** Starting a project that will require >5 tool calls or complex multi-step work.
+**Use when:** Your project is getting complex—multiple features, lots of back-and-forth, or work that spans several sessions.
 
 ```bash
 /planning-setup
 ```
 
-## Repository Structure
+**What it creates:**
+- `task_plan.md` - Your goal, current phase, decisions made
+- `findings.md` - What Claude discovers along the way
+- `progress.md` - Session-by-session log of what happened
+- Enforcement rules so Claude actually uses these files
 
-```
-vibe-skills/
-├── skills/
-│   └── planning-setup/          # Planning infrastructure scaffolding
-│       ├── SKILL.md             # Main skill file
-│       ├── references/          # Usage guide, Manus principles
-│       ├── workflows/           # Setup workflows
-│       └── templates/           # Planning file templates
-├── CLAUDE.md                    # Project instructions
-└── README.md                    # This file
-```
+No more "wait, what were we doing?" moments.
 
-## Testing Locally
+## Why This Exists
 
-```bash
-npx skills add ./path/to/vibe-skills
-```
+When you're vibecoding a complex project, context gets lost. Claude forgets what was tried, repeats mistakes, or loses track of the bigger picture.
+
+These skills give Claude the structure to:
+- Remember across sessions
+- Learn from errors
+- Stay focused on your actual goal
+
+You describe what you want. Claude figures out how. These skills help Claude do that better.
 
 ## License
 
