@@ -5,14 +5,21 @@ description: Sets up planning-with-files infrastructure for complex projects. Cr
 
 # Planning Setup Skill
 
-This skill scaffolds the planning-with-files infrastructure for your project, including:
+I scaffold planning-with-files infrastructure for your project:
 - Three planning files (task_plan.md, findings.md, progress.md)
 - CLAUDE.md methodology guidance
 - .claude/rules enforcement for planning discipline
 
+## When to Use This vs EnterPlanMode
+
+- **Use this skill** when starting a new project that needs persistent planning infrastructure across sessions
+- **Use EnterPlanMode** for single-session implementation tasks where built-in task tracking suffices
+
+This skill creates files that persist; EnterPlanMode is for in-session planning that doesn't need to survive restarts.
+
 ## Interactive Setup Workflow
 
-I'll ask you 6-8 questions to customize the planning infrastructure for your project:
+I use the `AskUserQuestion` tool to gather your preferences interactively, presenting options with descriptions so you can make informed choices. I'll ask you 6-8 questions to customize the planning infrastructure:
 
 1. **Project name**: What should I call this project?
 2. **Goal**: What's the one-sentence goal of this project?
@@ -64,7 +71,7 @@ Enforcement rules:
 
 ## Workflow
 
-After asking questions, I will:
+After gathering your answers, I:
 
 1. Create the planning directory (if requested)
 2. Generate customized task_plan.md with your goal, phases, and questions
